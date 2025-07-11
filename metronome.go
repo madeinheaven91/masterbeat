@@ -21,10 +21,10 @@ type Metronome struct {
 func NewMetronome(bpm float64, timeSignature *TimeSignature, sounds *SoundBank) (*Metronome, error) {
 	err := speaker.Init(sounds.format.SampleRate, sounds.format.SampleRate.N(time.Second/50))
 	if err != nil {
-		return nil, fmt.Errorf("initializing speaker: %w", err)
+		return nil, fmt.Errorf("couldn't initialize speaker: %w", err)
 	}
 
-	// the higher denominator the faster it goes
+	// the higher a bottom number is the faster it goes
 	return &Metronome{
 		bpm:           bpm,
 		interval:      CalculateInterval(bpm, *timeSignature),
@@ -59,12 +59,12 @@ func (m *Metronome) Start() {
 			}
 
 			// Determine which sound to play
-			m.beatCount++
-			if m.beatCount%m.timeSignature.Top == 1 {
+			if m.beatCount%m.timeSignature.Top == 0 {
 				m.playSound(m.sounds.accentSound)
 			} else {
 				m.playSound(m.sounds.regularSound)
 			}
+			m.beatCount++
 
 			// Calculate next beat time (compensate for any drift)
 			nextBeat = nextBeat.Add(m.interval)

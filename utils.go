@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"time"
 
@@ -28,4 +29,9 @@ func LoadSound(file string) (*beep.Buffer, beep.Format, error) {
 
 func CalculateInterval(bpm float64, sig TimeSignature) time.Duration {
 	return 4 * time.Minute / (time.Duration(sig.Bottom) * time.Duration(bpm))
+}
+
+func Error(format string, a ...any) {
+	fmt.Printf("\033[31m[ERROR]\033[0m ")
+	fmt.Printf(format, a...)
 }

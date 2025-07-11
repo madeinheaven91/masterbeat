@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"log"
 )
 
 func main() {
@@ -13,21 +12,24 @@ func main() {
 
 	sounds, err := NewSoundBank("regular.mp3", "accent.mp3")
 	if err != nil {
-		log.Fatal(err)
+		Error("Soundbank loading error: %s\n", err)
+		return
 	}
 
 	signature, err := ParseTimeSignature(*timeSignature)
 	if err != nil {
-		log.Fatal(err)
+		Error("Time signature parsing error: %s\n", err)
+		return
 	}
 
 	metronome, err := NewMetronome(*bpm, signature, sounds)
 	if err != nil {
-		log.Fatal(err)
+		Error("Metronome initializing error: %s\n", err)
+		return
 	}
 	defer metronome.Stop()
 
-	fmt.Printf("Starting %d/%d metronome with accent on 4th beat at %.2f bpm\n", signature.Top, signature.Bottom, *bpm)
+	fmt.Printf("Starting %d/%d metronome at %.2f bpm\n", signature.Top, signature.Bottom, *bpm)
 	fmt.Println("Press Enter to stop...")
 	go metronome.Start()
 

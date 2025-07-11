@@ -15,12 +15,12 @@ type SoundBank struct {
 func NewSoundBank(regularFile, accentFile string) (*SoundBank, error) {
 	regular, format, err := LoadSound(regularFile)
 	if err != nil {
-		return nil, fmt.Errorf("loading regular sound: %w", err)
+		return nil, fmt.Errorf("couldn't load regular sound: %w", err)
 	}
 
 	accent, _, err := LoadSound(accentFile)
 	if err != nil {
-		return nil, fmt.Errorf("loading accent sound: %w", err)
+		return nil, fmt.Errorf("couldn't load accent sound: %w", err)
 	}
 
 	return &SoundBank{

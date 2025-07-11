@@ -8,7 +8,7 @@ import (
 )
 
 type TimeSignature struct {
-	Top   int
+	Top    int
 	Bottom int
 }
 
