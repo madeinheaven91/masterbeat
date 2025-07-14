@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"time"
 
-	tea "github.com/charmbracelet/bubbletea"
+	// tea "github.com/charmbracelet/bubbletea"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/gopxl/beep/v2"
 	"github.com/gopxl/beep/v2/speaker"
@@ -110,16 +110,16 @@ func (m *Metronome) DecreaseBPM(dec float64) {
 	m.Interval = misc.CalculateInterval(m.BPM, m.TimeSignature)
 }
 
-func (m *Metronome) playSoundCmd(accent bool) tea.Cmd {
-	return func() tea.Msg {
-		var sound *beep.Buffer
-		if accent {
-			sound = m.Sounds.accentSound
-		} else {
-			sound = m.Sounds.regularSound
-		}
-		streamer := sound.Streamer(0, sound.Len())
-		speaker.Play(beep.Seq(streamer))
-		return nil
-	}
-}
+// func (m *Metronome) playSoundCmd(accent bool) tea.Cmd {
+// 	return func() tea.Msg {
+// 		var sound *beep.Buffer
+// 		if accent {
+// 			sound = m.Sounds.accentSound
+// 		} else {
+// 			sound = m.Sounds.regularSound
+// 		}
+// 		streamer := sound.Streamer(0, sound.Len())
+// 		speaker.Play(beep.Seq(streamer))
+// 		return nil
+// 	}
+// }

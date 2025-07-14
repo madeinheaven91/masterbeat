@@ -1,31 +1,45 @@
 package internal
 
 import (
+	"bytes"
 	"fmt"
 	"os"
 	"time"
 
-	"github.com/gopxl/beep/v2"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/gopxl/beep/v2"
 	"github.com/gopxl/beep/v2/mp3"
+
+	assets "github.com/madeinheaven91/masterbeat/assets"
 )
 
 var (
-	_, Debug = os.LookupEnv("DEBUG")
-	MsgDump, _  = os.OpenFile("messages.log", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0o644)
+	_, Debug     = os.LookupEnv("DEBUG")
+	MsgDump, _   = os.OpenFile("messages.log", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0o644)
 	DebugDump, _ = os.OpenFile("debug.log", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0o644)
 
 	BeatSymbols = make(map[string]string)
 )
 
+// a wrapper to work around the mp3.Decode accepting io.ReadCloser
+// FIXME: maybe im stupid
+type ReaderWrapper struct {
+	*bytes.Reader
+}
+
+func (rd ReaderWrapper) Close() error {
+	return nil
+}
+
 func LoadSound(file string) (*beep.Buffer, beep.Format, error) {
-	f, err := os.Open(file)
+	f, err := assets.Assets.ReadFile(file)
 	if err != nil {
 		return nil, beep.Format{}, err
 	}
-	defer f.Close()
 
-	streamer, format, err := mp3.Decode(f)
+	reader := ReaderWrapper{bytes.NewReader(f)}
+
+	streamer, format, err := mp3.Decode(reader)
 	if err != nil {
 		return nil, beep.Format{}, err
 	}
@@ -53,7 +67,7 @@ func InitBeatSymbols(noNerd bool) {
 		BeatSymbols["past"] = "#"
 		BeatSymbols["current"] = "#"
 		BeatSymbols["future"] = "-"
-	}else {
+	} else {
 		BeatSymbols["past"] = ""
 		BeatSymbols["current"] = ""
 		BeatSymbols["future"] = ""
