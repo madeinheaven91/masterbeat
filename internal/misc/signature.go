@@ -1,4 +1,4 @@
-package main
+package internal
 
 import (
 	"fmt"
@@ -34,4 +34,8 @@ func ParseTimeSignature(input string) (*TimeSignature, error) {
 	}
 	sig, err := NewTimeSignature(numerator, denominator)
 	return sig, err
+}
+
+func (t TimeSignature) String() string {
+	return fmt.Sprintf("%d/%d", t.Top, t.Bottom)
 }

@@ -1,9 +1,10 @@
-package main
+package metronome
 
 import (
 	"fmt"
 
 	"github.com/gopxl/beep/v2"
+	misc "github.com/madeinheaven91/masterbeat/internal/misc"
 )
 
 type SoundBank struct {
@@ -13,12 +14,12 @@ type SoundBank struct {
 }
 
 func NewSoundBank(regularFile, accentFile string) (*SoundBank, error) {
-	regular, format, err := LoadSound(regularFile)
+	regular, format, err := misc.LoadSound(regularFile)
 	if err != nil {
 		return nil, fmt.Errorf("couldn't load regular sound: %w", err)
 	}
 
-	accent, _, err := LoadSound(accentFile)
+	accent, _, err := misc.LoadSound(accentFile)
 	if err != nil {
 		return nil, fmt.Errorf("couldn't load accent sound: %w", err)
 	}
@@ -29,3 +30,4 @@ func NewSoundBank(regularFile, accentFile string) (*SoundBank, error) {
 		format:       format,
 	}, nil
 }
+

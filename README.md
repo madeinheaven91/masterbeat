@@ -1,6 +1,6 @@
 # masterbeat
 
-**masterbeat** is a TUI metronome.
+**masterbeat** is a TUI metronome to help you master you beat.
 
 ## Usage
 

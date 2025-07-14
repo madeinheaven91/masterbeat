@@ -1,0 +1,307 @@
+(tea.enterAltScreenMsg) {
+}
+(tea.WindowSizeMsg) {
+ Width: (int) 150,
+ Height: (int) 19
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195880108708878,
+ ext: (int64) 515765378,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195880109629337,
+ ext: (int64) 516685827,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(tea.KeyMsg)  
+(ui.tickMsg) {
+ wall: (uint64) 13985195881192619603,
+ ext: (int64) 1525934271,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195881735522041,
+ ext: (int64) 1995094893,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195882205389860,
+ ext: (int64) 2464962705,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195882748298863,
+ ext: (int64) 2934129883,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195883217164509,
+ ext: (int64) 3402995529,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195883686202704,
+ ext: (int64) 3872033724,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195884229086763,
+ ext: (int64) 4341175959,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195884698798864,
+ ext: (int64) 4810888061,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195885242161844,
+ ext: (int64) 5280509369,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195885711544209,
+ ext: (int64) 5749891781,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195886254427991,
+ ext: (int64) 6219033548,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195886723694978,
+ ext: (int64) 6688300723,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195887266893327,
+ ext: (int64) 7157757052,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195887736081955,
+ ext: (int64) 7626945685,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195888278927769,
+ ext: (int64) 8096049667,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195888748258425,
+ ext: (int64) 8565380326,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195889291401431,
+ ext: (int64) 9034781509,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195889761076784,
+ ext: (int64) 9504456861,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195890304247255,
+ ext: (int64) 9973885508,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195890773148822,
+ ext: (int64) 10442787073,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195891316422397,
+ ext: (int64) 10912318830,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195891785949728,
+ ext: (int64) 11381846155,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195892255385004,
+ ext: (int64) 11851281433,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195892798225318,
+ ext: (int64) 12320379923,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195893267687922,
+ ext: (int64) 12789842524,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195893810328149,
+ ext: (int64) 13258740938,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195894279958158,
+ ext: (int64) 13728370938,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195894822645282,
+ ext: (int64) 14197316244,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195895291625569,
+ ext: (int64) 14666296526,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195895834574702,
+ ext: (int64) 15135503835,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195896303974364,
+ ext: (int64) 15604903495,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195896847257156,
+ ext: (int64) 16074444467,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195897316654512,
+ ext: (int64) 16543841820,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195897860086826,
+ ext: (int64) 17013532314,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195898329171498,
+ ext: (int64) 17482616982,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195898871799604,
+ ext: (int64) 17951503279,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195899341217492,
+ ext: (int64) 18420921152,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195899810406583,
+ ext: (int64) 18890110254,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195900353305662,
+ ext: (int64) 19359267497,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195900822472863,
+ ext: (int64) 19828434743,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195901365594012,
+ ext: (int64) 20297814030,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195901835281972,
+ ext: (int64) 20767501983,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195902378178906,
+ ext: (int64) 21236657093,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195902847097773,
+ ext: (int64) 21705575969,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195903390495261,
+ ext: (int64) 22175231627,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195903860052416,
+ ext: (int64) 22644788785,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195904403322610,
+ ext: (int64) 23114317148,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195904873160337,
+ ext: (int64) 23584154876,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195905416057373,
+ ext: (int64) 24053310089,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195905885685376,
+ ext: (int64) 24522938091,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195906428711061,
+ ext: (int64) 24992221958,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195906898106147,
+ ext: (int64) 25461617039,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195907441660287,
+ ext: (int64) 25931429357,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195907910756331,
+ ext: (int64) 26400525399,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195908380018532,
+ ext: (int64) 26869787600,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195908922917474,
+ ext: (int64) 27338944717,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195909392309588,
+ ext: (int64) 27808336832,
+ loc: (*time.Location)(0x734500)(Local)
+}
+(ui.tickMsg) {
+ wall: (uint64) 13985195909935453107,
+ ext: (int64) 28277738532,
+ loc: (*time.Location)(0x734500)(Local)
+}
