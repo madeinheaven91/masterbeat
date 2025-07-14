@@ -61,25 +61,17 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			}
 			m.metronome.Active = !m.metronome.Active
 		case "up":
-			// if m.metronome.Active {
-			// 	m.metronome.ToggleChan <- struct{}{}
-			// }
 			m.metronome.IncreaseBPM(1)
 		case "shift+up":
-			// if m.metronome.Active {
-			// 	m.metronome.ToggleChan <- struct{}{}
-			// }
 			m.metronome.IncreaseBPM(10)
+		case "ctrl+up":
+			m.metronome.IncreaseBPM(0.05)
 		case "down":
-			// if m.metronome.Active {
-			// 	m.metronome.ToggleChan <- struct{}{}
-			// }
 			m.metronome.DecreaseBPM(1)
 		case "shift+down":
-			// if m.metronome.Active {
-			// 	m.metronome.ToggleChan <- struct{}{}
-			// }
 			m.metronome.DecreaseBPM(10)
+		case "ctrl+down":
+			m.metronome.DecreaseBPM(0.05)
 		default:
 			m.status = msg.String()
 		}

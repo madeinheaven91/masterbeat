@@ -20,14 +20,16 @@ See `go run . -help` for list of flags.
 
 ### Keybinds
 
-| Key        | Action              |
-| ---------- | ------------------- |
-| q          | quit                |
-| space      | pause/resume        |
-| up         | increment BPM by 1  |
-| shift+up   | increment BPM by 10 |
-| down       | decrement BPM by 1  |
-| shift+down | decrement BPM by 10 |
+| Key        | Action                |
+| ---------- | --------------------- |
+| q          | quit                  |
+| space      | pause/resume          |
+| up         | increment BPM by 1    |
+| shift+up   | increment BPM by 10   |
+| ctrl+up    | increment BPM by 0.05 |
+| down       | decrement BPM by 1    |
+| shift+down | decrement BPM by 10   |
+| ctrl+down  | increment BPM by 0.05 |
 
 ## TODO
 
