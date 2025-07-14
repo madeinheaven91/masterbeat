@@ -14,7 +14,7 @@ import (
 )
 
 var (
-	_, Debug     = os.LookupEnv("DEBUG")
+	_, Debug     = os.LookupEnv("MASTERBEAT_DEBUG")
 	MsgDump, _   = os.OpenFile("messages.log", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0o644)
 	DebugDump, _ = os.OpenFile("debug.log", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0o644)
 
