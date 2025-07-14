@@ -35,7 +35,8 @@ func InitModel(metronome *metronome.Metronome) *model {
 }
 
 func (m model) Init() tea.Cmd {
-	return tea.Batch(tea.EnterAltScreen)
+	// return tea.Batch(tea.EnterAltScreen)
+	return nil
 }
 
 func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {

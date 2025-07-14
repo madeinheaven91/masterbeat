@@ -31,5 +31,5 @@ go.work.sum
 # .idea/
 # .vscode/
 
-.messages.log
-.debug.log
+messages.log
+debug.log
